@@ -1,30 +1,26 @@
+/* Google gont  */
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 body{
     font-family: 'Bruno Ace SC', cursive;
+    line-height: 1.5;
 }
 
 img{
-    vertical-align: top;
+    vertical-align:middle;
 }
 
-.font_style{
-    line-height: 150%;
-    letter-spacing: 0em;
+.container{
+    max-width: 1296px;
+    margin: 0px auto;
+}
+/* nav 設定 */
+.nav{
+    background: #000; 
+    padding: 52px 0px;
 }
 
-
-h1{
-    font-size: 128px;
-    text-align: right;
-    display: block;
-}
-
-h2{
-    font-size: 64px;
-}
-
-h3{
+.h3{
     font-size: 24px;
 }
 /*
@@ -33,36 +29,27 @@ img{
     height: 100%;
 }
 */
-.fs-1text{
-    font-size: 32px;
+.h2{
+    font-size: 64px;
 }
 
-.fs-2text{
-    font-size: 24px;
+.h1{
+    font-size: 128px;
+    text-align: right;
+    display: block;
 }
 
-.fs-3text{
-    font-size: 20px;
-}
-.fs-4text{
-    font-size: 16px;
-}
-.font-color{
+.font-color-white{
     color:#FFFFFF;
-}
-.container{
-    max-width: 1296px;
-    margin: 0px auto;
-}
-
-.nav{
-    background: #000; 
 }
 
 .list{
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+}
+.list li{
+    display: flex;
+    align-items: center;
 }
 
 .list > li:not(:last-child) {
@@ -71,13 +58,12 @@ img{
 
 .list > li:last-child {
     width: 196px;
-    text-align: right;
+   justify-content: end;
 }
 
 .list a{
     color: #D1D1D1;
     display: block;
-    margin-top: 40px;
 }
 
 /*Banner區域*/
@@ -90,15 +76,10 @@ img{
     align-items: center;
 }
 .avatar{
-    width: 636px;
-    margin-top: 72px;
-    margin-bottom:72px;
-    margin-right:24px;
+    max-width: 636px;
+    margin: 72px 24px 32px 0px;
 }
-.intro_word{
-    color:#fff;
-}
-.green{
+.font-color-green{
     color: #00FFA3;
 }
 /*Banner按鈕*/
@@ -126,13 +107,14 @@ img{
 }
 
 .arrow_icon{
-    width: 24px;
+    max-width: 24px;
 }
 
 /*intro*/
 .intro{
-    background-image: url(img-week2/background-img.png);
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true');
     background-size: cover;
+    background-position: center;
 }
 .intro_box{
     display: flex;
@@ -141,8 +123,14 @@ img{
     
 }
 .intro_l{
-    width: 526px;
+    max-width: 526px;
     margin-right: 24px;
+}
+.mb-36{
+    margin-bottom: 36px;
+}
+.mb-32{
+    margin-bottom: 32px;
 }
 .dec_img{
     display: flex;
@@ -172,30 +160,28 @@ img{
     padding:160px 0px;
 }
 .cards{
-    width: 636px;
+    width: 49.999%;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 24px;
+    gap: 24px;
+}
+.h4{
+    font-size: 20px;
 }
 .card_box{
-    width: 304px;
+    width: 306px;
     padding: 16px;
     border:1px solid #E3E3E3;
     box-shadow:4px 4px 4px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
 }
-.card_title{
+.mb-4{
     margin-bottom: 4px;
 }
 .about_content{
     width: 526px;
 }
-.content{
-    font-size: 24px;
-}
-.about_content .content {
-    margin-bottom: 36px;
-}
+
 /*
 .about_content .content {
    line-height: 150%;
@@ -212,8 +198,7 @@ img{
     align-items: center;
     padding: 129px 0px;
 }
-.contact_title{
-    color: #FFFFFF;
+.mr-16{
     margin-right: 16px;
 }
 .contact_left{
@@ -246,7 +231,7 @@ img{
 .project{
     padding: 160px 0px;
 }
-.project h2{
+.project .txt-ali-right{
     width: 746px;
     margin-left: auto;
     margin-bottom: 16px;
@@ -267,7 +252,7 @@ img{
     display: flex;
     margin-bottom: 28px;
 }
-.pic_right .top img{
+.pic_right .img-left{
     margin-right: 24px;
 }
 .pic_right_content{
@@ -295,7 +280,13 @@ img{
 }
 .btn_arrow{
     width: 24px;
+    height: 24px;
+    overflow: hidden;
     margin-left: 4px;
+}
+.project .bottom{
+    display: flex;
+    justify-content: space-between;
 }
 
 /*footer*/
